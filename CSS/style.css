@@ -1,0 +1,893 @@
+/* Подключение формата текста */
+@font-face {
+	src: url('../fonts/OpenSans-Regular.ttf');
+	font-family: 'OpenSans Regular';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Italic.ttf');
+	font-family: 'OpenSans Italic';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-Bold.ttf');
+	font-family: 'OpenSans Bold';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-SemiBold.ttf');
+	font-family: 'OpenSans SemiBold';
+}
+
+@font-face {
+	src: url('../fonts/OpenSans-ExtraBold.ttf');
+	font-family: 'OpenSans ExtraBold';
+}
+
+/* Удаление отступов и установка стандарта текста */
+body,
+header {
+    margin: 0;
+    font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+}
+
+section.Section_Organization{
+     background-color: #e0e0e0;
+     margin: 0px;
+}
+
+/* Работа с Header */
+
+/* Выравнивание по центру всего заголовка*/
+    .main-menu{ 
+        margin: 0 auto;
+        max-width: 1249px;
+        min-height: 89px;
+        background-color: #000000;
+        opacity: 0.8;
+    }
+/* Расположение пунктов меню по центру */
+    .navigation-menu {
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;   
+    }
+/* Форматирование заголвка */
+    .navigation-menu > li {
+    padding: 39px 30px 30px; 
+    list-style: none; 
+    font-family: 'Open Sans Regular', Helvetica, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.49px;
+    text-transform: uppercase;
+    color: #E0E0E0;
+    }
+        /* Отмена подчеркивания у ссылок */
+        .navigation-menu a:link {
+            color: #E0E0E0;
+            text-decoration: none;
+        }
+        /* Отмена подчеркивание у посещенных ссылок */
+        .navigation-menu a:visited {
+            color: #E0E0E0;
+            text-decoration: none;
+        } 
+        /* Окрашивание при наведении  */
+        .navigation-menu li:hover {
+            background-color: #FF3F40;
+        }
+
+/* Работа с OUR STRONG ORGANISATION */
+    
+    /* Выравнивание по центру секции */
+        .Intro {
+            margin: 0 auto;
+            max-width: 1249px;
+            min-height: 569px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;  
+        }
+    /* Добавление отступов для содержимого */
+        .Data {
+            padding-top: 103px;
+            padding-bottom: 122px;
+        }
+    /* Форматирование элементов */
+            /* Заголовок */
+        .header-1 {
+                        max-width: 652px;
+                        margin: 0;
+                        font-family: 'OpenSans ExtraBold', Helvetica, Arial, sans-serif;
+                        font-style: normal;
+                        font-size: 60px;
+                        text-transform: uppercase;
+                        color: #000000;
+                        margin-bottom: 35px;
+                        font-weight: 800;
+                        font-size: 60px;
+                        line-height: 72px;
+                        letter-spacing: 6px;
+        }
+            /* Работа с текстом */
+        .text {
+                        max-width: 544px ;
+                        margin-bottom: 68px;
+        }
+         /* Работа с ссылкой на контакт */
+        .contact {
+                        /* Расположние кнопки */
+                        margin: 0;
+                        display:flex;
+                        justify-content: center;
+                        align-items: center;
+                        /* Параметры кнопки */
+                        width: 230px;
+                        height: 58px;
+                        /* Формат текста */
+                        font-family: 'OpenSans Bold', Helvetica, Arial, Helvetica, sans-serif;
+                        letter-spacing: 0.3195px;
+                        color: #FFFFFF;
+                        background: #ff3f40;
+                        /* Округление краев */            
+                        border-radius: 5px;
+                        text-align: center;
+                        text-decoration: none;
+            } 
+        /* Работа с изображением */
+        .im-link {
+                        display: inline-block;
+                        width: 551px;
+                        height: 356px;
+                        box-shadow: -10px -10px 10px rgba(122,122,122,0.4);
+        
+        }
+
+/* Работа с предложением - выравнивание по центру */
+section.Section_offer{
+    margin: 0 auto;
+    max-width: 1254px;
+    min-height: 591px;
+    padding-top: 106px;
+}      
+
+/* Расположние элементов согласно макету на двух половинах - начало наверху, расстояние между блоками */
+.Section_offer{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+
+}
+
+/* Работа с первой половиной */
+          
+            /* Основное расположние */
+            .offer{
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                min-width: 539px;
+                justify-content: start;
+                margin-right: 100px; 
+            }
+            /* Оступ между параграфом и кнопкой */
+            .offer > p{
+                padding-bottom: 51px;
+            }
+            /* Форматирование заголовка */
+            .header-2 { 
+                            font-family: 'OpenSans Bold', Helvetica, Arial, Helvetica, sans-serif;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 42.1902px;
+                            line-height: 55px;
+                            letter-spacing: 0.422159px;
+                            text-transform: uppercase;  
+                            color: #000000;   
+            }
+            /* Ссылка Learn More */
+            .Learn-more {
+    margin: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* Параметры кнопки */
+    width: 227px;
+    height: 55px;
+    /* Формат текста */
+    font-family: 'OpenSans Bold', Helvetica, Arial, Helvetica, sans-serif;
+    letter-spacing: 0.3195px;
+    color:#FF2D2D;
+    /* Округление краев */            
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+    /* Границы */
+    background: rgba(0, 0, 0, 0.0001);
+    border: 2px solid  #FF0000;
+    box-sizing: border-box;
+            }
+
+/* Работа со второй половиной предложения */
+
+            /* Основное расположение */
+            .offer-services{
+                display: flex;
+                align-items: center;
+                flex-wrap: wrap;
+                min-width: 643px; 
+                min-height: 471px;
+            }
+
+            /* Занимает половину экрана */
+            .services {
+                width: 50%;   
+            }
+            /* Максимальная ширина параграфов */
+            .services > p {
+                max-width: 301px;
+            }
+            /* Форматирование для заголовков */
+            .services > h3 {
+            font-family: 'OpenSans SemiBold', Helvetica, Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24.0692px;
+            line-height: 0px;
+            letter-spacing: 0.271838px;
+            color: #000000;
+            }
+
+/* Стилизация разделяющей линии */
+.separator {
+    max-width: 1249px;
+    background: #ECECEC;
+    border: #ECECEC;
+    height: 2px
+}
+
+/* Основное расположение секции Section_Feature */
+section.Section_Feature{
+    margin: 0 auto;
+    max-width: 1254px;
+    min-height: 1034px;
+    padding-top: 100px;
+    }
+
+            /* Форматирование заголвка */
+            section.Section_Feature > h2{
+                max-width: 453px;
+                margin: 0 auto;
+                font-family: 'OpenSans Bold', Helvetica, Arial, sans-serif;
+                font-style: normal;
+                font-size: 41px;
+                text-transform: uppercase;
+                color: #000000;
+                line-height: 32px;
+                letter-spacing: 1px;  
+            }
+
+            /* Форматирование параграфа */
+            section.Section_Feature > p{
+            max-width: 536px ; 
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            padding-top: 30px;
+            text-align: center;
+            padding-bottom: 34px;
+            }
+
+            /* Форматирование разделителя */
+            .red-line { 
+                margin: 0 auto;
+                max-width: 134px;
+                background: #FF2D2D;
+                border: #FF2D2D;
+                height: 2px;
+            }
+
+            /* Форматирование навигационного меню */
+            .menu-items {
+                width: 100%;
+                list-style: none;
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                margin-bottom: 60px;
+                text-decoration: none;
+                padding-top: 86px;
+            }
+
+            /* Форматирование цвета ссылок */
+            .menu-items a {
+                left: 45px;
+                color: #000;
+                margin-right: 55px;
+                font-size: 22px;
+                font-family: 'OpenSans SemiBold', Helvetica, Arial, sans-serif;
+                text-transform: uppercase;
+                text-decoration: none;
+                opacity: 0.7;
+            }
+
+            /* Окрашивание при наведении  */
+            .menu-items a.active {
+                color: #ff2d2d;
+                opacity: 1;
+            }
+            .menu-items a:hover {
+                color: #ff2d2d;
+            }
+
+            /* Работа с изображениями */
+            .images-products {
+                display: flex;
+                flex-wrap: wrap;
+                max-width: 1249px;
+            }
+            /* Отсупы между изображениями */
+            .images-products > img{
+                padding-left: 7px;
+                padding-bottom: 7px;
+            }
+
+/* Основное расположение секции Our-team */
+section.Our-team{
+                margin: 0 auto;
+                max-width: 1254px;
+                min-height: 1034px;
+            }
+            /* Форматирование общеий информации о команде */
+            section.Our-team > h2 {
+            font-family: 'OpenSans Bold', Helvetica, Arial, Helvetica, sans-serif;
+                            font-style: normal;
+                            font-weight: bold;
+                            font-size: 42.1902px;
+                            line-height: 55px;
+                            letter-spacing: 0.422159px;
+                            text-transform: uppercase;  
+                            color: #000000;   
+            }
+            section.Our-team > P {
+                max-width: 460px;
+                padding-bottom: 37px;
+            }
+            section.Our-team > hr{
+                margin: 0;
+                max-width: 134px;
+                background: #FF2D2D;
+                border: #FF2D2D;
+                height: 3px;
+            }
+            /* Расположение секции с фотографиями*/
+            .staff{
+                padding-top: 100px;
+                display: flex;
+                justify-content: flex-start;  
+                align-items: flex-end;
+                min-height: 458px; 
+            }
+            /* Работа с левой половиной */
+            .general-team {
+                max-width: 387px ;
+                padding-right: 50px;
+            }
+            .main-member-info > h3 {
+            font-family: 'OpenSans SemiBold', Helvetica, Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24.0692px;
+            line-height: 0px;
+            letter-spacing: 0.271838px;
+            color: #000000;
+            }
+            /* Работа со вотой половиной */
+            /* Высота MARK WAUGH секции + остальное */
+            .emp-team {
+                
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            /* Работа только с фото сотрудников */
+            .imeg-team{
+                display: flex;
+                flex-direction: row;
+            }
+
+            /* Отступы между фото */
+            .member > img {
+                padding-right: 10px;
+            }
+
+            /* Надпись с именами сотрудников позиция родителя */
+            .imeg-team {
+                position: relative;
+            }
+
+            /* Заголовок для фотографий на фото */
+            .member > h3 {
+                margin-bottom: 3px;
+                visibility: hidden;
+                color: #ffffff;
+                position: absolute;
+                bottom: 0;
+                width: 199px;
+                height: 37px;
+                text-align: center;
+                background-color: #000;
+                opacity: 0.5;
+            }
+             /* Пояление при наведении */
+            .member:hover > h3 {
+                visibility: visible;
+            }
+
+            /* Форматирование теста*/
+            .emp-team > h3{
+            font-family: 'OpenSans SemiBold', Helvetica, Arial, Helvetica, sans-serif;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24.0692px;
+            line-height: 0px;
+            letter-spacing: 0.271838px;
+            color: #000000;
+            text-transform: uppercase;  
+            }
+
+            .emp-team > p {
+            max-width: 662px;
+            }
+            /* Работа с навигационным меню */
+            .listofiem {
+                width: 100%;
+                list-style: none;
+                margin: 0;
+                padding:0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                text-decoration: none;
+                padding-top: 40px;
+                padding-bottom: 60px;
+            }
+            /* Форматирование пунктов меню */
+            .list_a {
+                left: 45px;
+                color: #000;
+                margin-right: 55px;
+                font-size: 18px;
+                font-family: 'OpenSans Italic', Helvetica, Arial, sans-serif;
+                text-decoration: none;
+                opacity: 0.7;
+            }
+
+            .listofiem{
+                display: flex;
+                justify-content: flex-start;
+            }
+/* Основное расположение секции tips */
+section.Tips{
+    background-color: #2D2D2D;
+    display: flex;
+    flex-direction: column; 
+    min-height: 516px;
+    align-items: center;
+    justify-content: center;
+}
+/* расположение формы */
+.form-tips {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+/* Форматирование текста */
+.Tricks > h2 {
+
+                max-width: 1129px;;
+                margin: 0 auto;
+                font-family: 'OpenSans Bold', Helvetica, Arial, sans-serif;
+                font-style: normal;
+                font-size: 42px;
+                color: #FFFFFF;
+                line-height: 24px;
+                letter-spacing: 1.05px;
+                align-items: center;
+                text-align: center; 
+
+} 
+/* Выравнивание параграфа по центру */
+.Tricks > p {
+    margin: 0;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+	opacity: 0.8;
+	
+
+}
+/* Выравнивание формы по центру */
+.form-tips > form {
+    display: flex;
+    justify-content: center;  
+    padding-top: 50px;
+    width: 524px;
+    max-height: 82px;
+    
+}
+/* Форматирование поля для ввода имейл */
+.email {
+	color: grey;
+	display: flex;
+	align-items: center;
+	background-color: #fff;
+	box-sizing: border-box;
+	flex: 0 1 521px;
+	max-width: 521px;
+	min-height: 79px;
+	padding: 0;
+	padding-left: 35px;
+	border: none;
+	border-radius: 5px;
+	margin-right: 22px;
+}
+
+/* Форматирование кнопки подписки */
+.subscribe-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'OpenSans Bold';
+	width: 214px;
+	min-height: 79px;
+	background-color: #ff2d2d;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+}
+
+/* Feedback */
+/* Основное расположение секции Feedback*/
+.feedback-contacts-wrapper{ 
+    margin: 0 auto;
+    max-width: 1254px;
+    min-height: 1034px;
+    padding-top: 100px;
+    min-height: 516px;
+
+}
+
+/* Форматирование заголовка */
+.feedback > h2 {
+    font-family: 'OpenSans Bold', Helvetica, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 42.1902px;
+    line-height: 55px;
+    letter-spacing: 0.422159px;
+    text-transform: uppercase;  
+    color: #000000; 
+    margin-bottom: 34px;
+ 
+}
+
+
+.feedback-contacts-wrapper {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	flex-wrap: nowrap;
+	padding-top: 92px;
+    padding-bottom: 110px;
+}
+
+/* Рассположение ширины формы */
+.feedback {
+	max-width: 731px;
+	margin-right: 107px;
+}
+
+/* Рассположение ширины p */
+.feedback > p {
+	max-width: 720px;
+	margin-bottom: 50px;
+}
+
+/* Рассположение ширины hr */
+.header-line_feedback-line {
+	margin-left: 0px;
+	margin-bottom: 75px;
+}
+
+/* Рассположение полей формы*/
+.feedback-form {
+    padding-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+/* Стилистическое оформление форомы */
+.feedback-form > div {
+	color: grey;
+	display: flex;
+	align-items: center;
+	box-sizing: border-box;
+	padding-left: 54px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f3f3f3;	
+	margin-bottom: 45px;
+}
+
+.feedback-form > .name-input,
+.feedback-form > .email-input {
+	width: 339px;
+	max-width: 339px;
+	height: 69px;
+}
+
+.feedback-form > .name-input {
+	margin-right: 53px;
+}
+
+.feedback-form > .message-input {
+	resize: none;
+	font-size: 16px;
+	font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+	width: 731px;
+	max-width: 731px;
+	height: 249px;
+	box-sizing: border-box;
+	padding-top: 35px;
+	padding-left: 54px;
+	padding-bottom: 150px;
+	margin-bottom: 45px;
+	border: none;
+	border-radius: 5px;
+	background-color: #f3f3f3;	
+}
+
+.feedback-form > .send-button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	width: 731px;
+	max-width: 731px;
+	height: 72px;
+	color: #fff;
+	font-size: 18px;
+	font-family: 'OpenSans Bold', Helvetica, Arial, sans-serif;
+	background-color: #ff2d2d;
+	border: none;
+	border-radius: 5px;
+	text-transform: uppercase;
+} 
+
+.header-line_feedback-line {
+    
+    margin: 0 auto;
+    max-width: 134px;
+    background: #FF2D2D;
+    border: #FF2D2D;
+    height: 2px;
+    padding-right: 0px;  
+}
+
+
+/* Contacts */
+/* фон для Contacts */
+.contacts {
+	position: relative;
+	color: #e0e0e0;
+	background-color: #2c2c2c;
+	padding: 125px 78px;
+}
+
+/* форматирование заголовка второго уровня  */
+.contacts > h2 {
+	color: #e0e0e0;
+    font-size: 18px;
+    font-family: 'OpenSans Bold', Helvetica, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 34px;
+    letter-spacing: 0.317px;
+    text-transform: uppercase; 
+    margin-bottom: 13px; 
+
+}
+
+.contacts-address {
+	line-height: 28px;
+}
+
+/* форматирование заголовка p*/
+.contacts-address > p {
+    margin-bottom: 17px;
+    font-family: 'OpenSans Regular', Helvetica, Arial, sans-serif;
+    font-style: normal;
+}
+
+
+/* Footer */
+
+footer {
+	background-color: #2c2c2c;
+	padding: 0 1vw;
+}
+.footer-wrapper {
+	box-sizing: border-box;
+	padding: 19px 0 0;
+	color: #e0e0e0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 110px;
+	background-color: #2c2c2c;
+}
+.footer-social-links > a:not(:last-child) {
+	margin-right: 18px;
+}
+
+
+
+/* Responsive */
+@media screen and (max-width: 1286px) {
+	.Intro {
+		flex-wrap: nowrap;
+	}
+	.Data {
+		width: 50%;
+		box-sizing: border-box;
+		margin-right: 0;
+		padding-right: 15px;
+	}
+	.header-1{
+		font-size: 5vw;
+	}
+	.im-link{
+		width: 50%;
+		height: auto;
+	}
+	.images-products{
+		justify-content: flex-start;
+	}
+	.images-products > img {
+		width: 299px;
+		max-width: 100%;
+		/* height: auto; */
+		margin-right: 1vw;
+	}
+	.feedback-contacts-wrapper {
+		flex-wrap: wrap;
+		padding-left: initial;
+    	padding-right: initial;
+	}
+	.feedback {
+		margin: 0 auto;
+		margin-bottom: 30px;
+		padding: 0 1vw;
+	}
+	.contacts {
+		width: 100%;
+		max-width: 100%;
+	}
+	
+}
+
+@media screen and (max-width: 900px) {
+	.main-member-info {
+		position: initial;
+	}
+	.menu-items > li {
+		width: 100%;
+		text-align: center;
+	}
+	.Section_offer {
+		justify-content: center;
+	}
+	.offer,
+	.offer-services {
+		width: 100%;
+		max-width: 100%;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.offer {
+		width: 100%;
+		max-width: 100%;
+	}
+	.offer-services {
+		width: 100%;
+		max-width: 100%;
+	}
+	.contacts {
+		padding: 1vw;
+	}
+}
+
+@media screen and (max-width: 760px) {
+	.feedback-form > .name-input,
+	.feedback-form > .email-input,
+	.feedback-form > .message-input,
+	.feedback-form > .send-button {
+		width: 100%;
+		max-width: 100%;
+	}
+	.feedback-form > .name-input {
+		margin-right: 0;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	navigation-menu {
+		padding-left: 20px;
+	}
+	.Intro {
+		flex-wrap: wrap;
+	}
+	.Intro {
+		width: 100%;
+	}
+	.im-link {
+		width: 100%;
+	}
+	.Intro > img{
+		width: 100%;
+		height: auto;
+	}
+	.header-1 {
+		font-size: 50px;
+    }
+    .Section_offer{
+        
+        display: flex;
+        flex-wrap: wrap;
+        padding: 5px;
+        
+    }
+    .offer {
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+    .offer-services {
+        display: flex;
+        justify-content: space-aroundzs;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .emp-team {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .listofiem {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
+
+
+@media screen and (max-width: 400px) {
+	.subscribe-form {
+		flex-wrap: wrap;
+	}
+}
